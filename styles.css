@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /*background-color:dodgerblue;*/
+    /* para dar color al fondo, darle color a la etiqueta body solamente no dar color con asterisco*/
+}
+
+body{background-color: seashell;}
+
+/********************* TEMA MENU - PASO 15 *******************/
+/* colocal el menu de enlaces centrado de manera horizontal en la parte izquierda del menu*/
+
+header{background-color:black;
+    width: 100%;
+    padding: 10px;
+    position: fixed;  /* paso 17 ; para dejar el titulo movible mientras se navega en la pagina*/
+    z-index: 1;  /* el header no pasa por encima de la imagen del brazo por lo cual se usa la propiedad z-index*/
+}
+
+header h1 {
+    display: inline-block;
+    line-height 80px;
+    padding: 0 50px;
+}
+header nav {
+    float: right;
+    font-size: 20px;
+}
+
+nav ul li {
+    display: inline-block; /* ORDENA LA LISTA DE MANERA HORIZONTAL*/
+    margin-right: 30px;
+    line-height: 35px;
+}
+
+/********************* TEMA MENU - PASO 15 *******************/
+
+
+.brazo {  /*cree la clase brazo para la imagen del brazo robotico para poderla modificar en tamaño y posicion aparte
+           de las otras imagenes*/
+    padding: 10px;
+    height: 300px;
+    width: 500px;
+
+}
+
+a{  color: brown;    /* establezco el color de "a" los enlaces de la pagina*/
+    text-decoration: none;    }
+
+/*h1{background-color: white;
+   color: black;}*/
+
+
+/*main{background-color:grey;
+     width: 100%;}    
+        /*color:whitesmoke;
+        font-size: 12px;
+        margin: 40px;
+        padding: 20px;
+        border: 5px solid navy;}*/
+
+
+/*footer{background-color:gold;
+       width: 100%;} 
+        /*margin: 40px;
+        padding: 20px;
+        font-size: 20px;
+        color: white;
+        border: 10px solid teal;}*/
+
+ul{color:white;}
+
+
+
+    /* CLASES PARA TITULOS*/
+
+.fuente-clara{color:#b59a61;}
+.fuente-oscura{color: #22211f;
+                font-size: 21px;}
+.fuente-acento{color: #b59a61;}
+
+
+p:hover{color: blue;}   /* cambia de color el parrafo al pasar el mouse sobre este */
+
+
+/************** EJERCICIO - DISPLAY *******************/
+
+.int {   /*tamaño de la letra "interactividad" y ancho del cuadro completo */
+    font-size: 25px;
+    display: flex;
+    width: 1500px;    /* reduciendo el ancho del "PADRE" que estaba de lado a lado se pudo ordenar los hijos de modo flex horiz.*/
+    position: relative;
+    left: 100px;
+    margin: 20px;
+    color: black;  /* color de la letra en general del "Padre"*/
+    display: flex;
+    justify-content: center;
+
+}
+
+.int .pr{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+img{    
+        height: 200px;
+        width: 200px;
+        border-radius: 5%;
+}
+
+/* cree una clase parrafo (que es la descripcion debajo de la imagen) para poder cambiarle el tamaño a la letra independiente del padre*/
+.int .pr .parrafo {
+    font-size: 20px;
+    color: black;
+}
+
+/**********************************************************************************************************/
+
+.about {
+    padding: 60px;
+    width: 1000px; /* para acercar mas los objetos entre si(acerca de mi y foto) le reduzco el ancho*/
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.acerca {
+    font-size: 30px;
+    color: #b59a61;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+    header {
+        background-color: blue;
+    }
+  }
+
+@media (max-width: 768px) {
+    .about {
+        width: 200px;        
+    }
+  }
+
+
+
+

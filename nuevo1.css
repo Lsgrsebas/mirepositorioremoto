@@ -1,0 +1,452 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /*background-color:dodgerblue;*/
+    /* para dar color al fondo, darle color a la etiqueta body solamente no dar color con asterisco*/
+}
+
+body {
+    background-color: navy;
+}
+
+                                /******************* CONFIGURACION INICIAL *********************/
+
+div {   /* en el div general es donde se pone el borde con la linea para evidenciar las cajas padres-hijos*/
+    /*border: solid red 1px;*/
+    margin: 10px;
+}
+
+    /************PADRE 1 ********************/
+
+.PD1 {
+    background-color: black;
+    /*position: fixed;  /* paso 17 ; para dejar el titulo movible mientras se navega en la pagina*/
+    z-ind;  /* el header no pasa por encima de la imagen del brazo por lo cual se usa la propiedad z-index*/
+}
+
+                                        /*********** ENCABEZADO PRINCIPAL *********/
+
+.ENC {
+    color: #b59a61;
+    font-size: 30px; /* TAMAÑO LETRA*/
+    font-weight: 1000;  /* COMANDO PARA LA NEGRILLA*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /*ESTILO DE LETRA*/
+    display: inline-block;
+    line-height 80px;
+    padding: 10px;
+}
+
+    /***************ENLACES DE ENCABEZADO *****************/
+
+.ENL {
+    float: right;
+    font-size: 20px;
+}
+
+nav ul li {
+    display: inline-block; /* ORDENA LA LISTA DE MANERA HORIZONTAL*/
+    margin-right: 40px;
+    line-height: 50px;   
+}
+
+.LISTA {
+    color: bisque;
+    text-decoration: none; /* se quita la el subrayado de los enlaces*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+                                        /*********** SEGUNDO CONJUNTO DE CAJAS *********/
+
+
+.SEGUNDO { /* en la clase del contenedor ppal es donde se coloca el display flex y el flex wrap para que los hijos se ordenen
+    verticalmente cuando se minimiza la pantalla*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  /* se centran las 2 cajas hijas*/
+    margin-top: 60px;
+}
+
+
+.SEGUNDO2 {   /*  se le da un ancho a la caja que contiene el titulo y el parrafo que es la clase "SEGUNDO2", 
+    al darle un ancho menor al de la foto se ordenan horizontalmente por el display flex del padre y se justifica el 
+    texto completo dentro de "SEGUNDO"" (acerca de mi y parrafo)*/
+    width: 20%;
+    margin: 30px;
+}
+
+.ACERCA {   /* se le asigno una clase a este titulo para poder modificar inedendientemente del parrafo */
+    text-align: center;
+    font-weight: 700; /*negrilla*/
+    color: #b59a61;
+}
+
+.AD {  /* al parrafo siempre se le da justificar texto */
+    text-align: justify; /* SIEMPRE JUSTIFICAR LOS PARRAFOS LARGOS*/
+}
+
+.AD:hover{color: blue;}   /* cambia de color el parrafo al pasar el mouse sobre este */
+
+.brazo { Se puede modificar el tamaño del brazo con la clase asignada (brazo)
+    width: 200px;
+    height: 200px;
+}
+
+
+                                        /*********** TERCER CONJUNTO DE CAJAS *********/
+
+
+.SECCION {  /* en la clase del contenedor ppal es donde se coloca el display flex y el flex wrap para que los hijos se ordenen
+    verticalmente cuando se minimiza la pantalla*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; /* los 3 bloques de cajar se distribuyen proporcionalmente*/
+    margin-top: 60px;
+}
+
+
+ /*  se distribuyen 3 grupo de cajas de manera horizontal segun el requerimiento; se le da un ancho a las cajas de 
+ cada seccion (SEC 1 - SEC2 - SEC3 )el ancho se debe distribuir en pocerntaje del total del ancho de la pantalla */
+
+.SEC1 {
+    width: 20%;
+}
+
+.SEC2 {
+    width: 20%;
+}
+
+.SEC3 {
+    width: 20%;
+}
+
+/****** Se da la misma clase a las 3 imagenes para que queden con el mismo tamaño, se centran las imagenes
+no me sirvio justificar ni alinear contenido ni items para centrar las imagenes, funciono con "position*/
+
+.IM {
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    /*position: relative;
+    left: 80px;    */
+}
+
+    /*********** Modificacion y personalizacion de los textos - tamaño, color, estilo letra***********/
+
+.T1 { /* Se crea una clase para los subtitulo debajo de cada imagen y se les modifica y se centran*/
+    text-align: center;
+    font-weight: 700; /*negrilla*/
+    color: midnightblue;
+    margin: 10px; /* espacio entre titulos y parrafos*/
+}
+
+.SB { /* se crea una clase para los "Saber mas..." para modificarlos al tiempo*/
+    font-weight: 700; /*negrilla*/
+    color: brown;
+    margin: 10px; /* espacio entre titulos y parrafos*/
+}
+
+
+
+                                        /*********** CUARTO  CONJUNTO DE CAJAS *********/
+
+.FOOT {
+    background-color: black;
+    margin-top: 50px;
+}
+
+.CONTACTO {
+    margin: 30px;
+    font-weight: 700; /*negrilla*/
+    color: beige;
+    padding: 10px;
+    text-align: center; /* ALINEAR TEXTO EN EL CENTRO*/
+}   
+
+.REDES {
+ 
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.yt {
+    height: 40px;  /*clase qie tiene todas las imagenes de logo para poder modificar el tamaño y que todas queden con el mismo*/
+    width: 40px;
+}
+
+/********************** MENU HAMBURGUESA ***********************/
+#check {
+    display: none;
+}
+
+.checkbtn {
+    font-size: 25px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+
+
+
+                                        /****** MEDIA QUERY    ********/
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+
+@media (max-width: 768px) {  /* se cambia el color de fondo  del encabezado, el tamaño de la caja del largo*/
+    .PD1 {
+        background-color: midnightblue;
+        height: 100px;
+    }
+    .ENL {
+        font-size: 13px;
+    }
+  }
+
+
+/**********************************/
+
+@media (max-width: 768px) { /* se interviene el segundo grupo de cajas "acerca de mi y foto"*/
+    .SEGUNDO2 {             /* acerca de mi y parrafo se minimiza el ancho*/
+        width: 70%;
+    }
+    .ACERCA {              /* se agranda letra de titulo y parrafo*/     
+        font-size: 20px;        
+    }
+    .AD {
+        font-size: 20px;
+    }
+
+    .IM {                  /* se reduce el tamaño de la imagen (brazo robotico)*/
+        width: 200px;
+        height: 200px;
+    }
+
+    .SEC1 {
+        width: 40%;
+    }
+    
+    .SEC2 {
+        width: 40%;
+    }
+    
+    .SEC3 {
+        width: 40%;
+    }
+
+                            /***********************CONFIGURACION MEDIA QUERY MENU HAMBURGUESA**************/
+
+
+    .checkbtn{
+        display: block;
+    }
+
+    .PD1 ul {               /*Configuracion del menu de los enlaces  despues de reducida la pantalla*/
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: black; /* color de fondo del menu despues de reducido el tamaño y pulsar boton*/
+        text-align: center;
+        top: 80px;
+        left: 100%;
+        transition: all 0.5s; /* tiempo de transicion de la imagen*/
+    }
+
+    #check:checked ~ ul {  /* elemento se comporta como bloque ; el simbolo "~" significa que selecciona todos los elementos ul*/
+        left: 0;
+        display: block;
+    }
+
+    .PD1 nav ul li {  /* la lista se muestra como bloaue de manera vertical*/
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    .PD1 nav ul li a {  /* tamaño de la letra de la lista*/
+        font-size: 30px;
+    }
+
+    #check:checked ~ .checkbtn {  /* despues de pulsar el boton hamburguesa se pone en negro el mismo*/
+        color: black;
+    }
+}
+
+
+
+
+
+
+/**************************** FORMULARIO ***************************/
+
+  /* ------------- Encabezado Contacto ------------- */
+
+.form-encabezado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+
+    width: 80%;
+    margin: 50px auto; /* me centra todo el recuadro del formulario*/
+    padding: 40px;
+}
+
+.form-encabezado h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* ------------- Formulario ------------- */
+
+.formulario {
+    background-color: black;
+    border-radius: 8px;
+
+    width: 100%;
+    padding: 20px;
+    margin: 20px 0 0 0;
+}
+
+/* ------------- Campos del Formulario ------------- */
+
+.form-eje {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: #b59a61;
+}
+
+.form-eje input[type="text"],
+.form-eje input[type="email"] {
+    background-color: aliceblue;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.form-eje label {
+    margin-bottom: 7px;
+    text-align: initial;
+
+}
+
+/* ------------- Para Pantallas de más de 700px ------------- */
+
+@media only screen and (min-width: 700px) {
+    .form-encabezado {
+        padding: 50px;
+    }
+
+    .form-eje {
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .form-eje input[type="text"],
+    .form-eje input[type="email"] {
+        width: 400px;
+        height: initial;
+    }
+    .form-eje label {
+        text-align: right;
+        width: 120px;
+        margin-top: 7px;
+        padding-right: 20px;
+    }
+}
+
+
+  /* ------------- CAMPO MENSAJE ------------- */
+  
+.form-eje textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+
+    background-color: aliceblue;
+    border: 0;
+    border-radius: 6px;
+
+
+    min-height: 100px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+
+
+    width: 100%
+}
+
+  /* ------------- Para Pantallas de más de 700px ------------- */
+  
+  @media only screen and (min-width: 700px) {
+    .form-eje textarea {
+        width: 400px;
+      }
+    }
+
+
+/* ------------- BOTON ------------- */
+
+.form-eje button {
+    font-size: 16px;
+    font-weight: bold; /*comando para negrilla*/
+
+    color: floralwhite;
+    background-color: darkslategray;
+
+    border: none;
+    border-radius: 3px;
+
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+.form-eje button:hover {
+    background-color: darkolivegreen;
+}
+
+.form-eje button:active {
+    background-color: coral;
+}
+
+  /* ------------- Para Pantallas de más de 700px ------------- */
+  
+  @media only screen and (min-width: 700px){
+    .form-eje button {
+        margin-left: 120px;
+    }
+  }
+
+
+/******************** GRETTING  ******************************/
+
+.greeting {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    color: darkslateblue;
+}
+

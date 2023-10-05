@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML SEMANTICO-2</title>
+    <link rel="stylesheet" href="nuevo1.css"> <!-- linkea el archivo .css al HTML-->
+    <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="greeting">
+        <p>Los antiguos decían por tanto:
+            "El hombre del Tao", permanece en el anonimato.
+            La virtud perfecta no produce nada.
+            "No ser" es "Ser de verdad"
+            y el más grande entre los hombre es nadie.</p>    
+    </div>>
+
+
+
+    <!---ENCABEZADO Y ENLACES PPALES-->
+
+    <div class="PD1">
+        <div class="ENC">MI SITIO WEB</div>
+        <div class="ENL">
+            <nav>
+                <input type="checkbox" id="check" /> <label for="check" class="checkbtn"> <i
+                        class="fa-solid fa-bars"></i>
+                </label>
+                <ul>
+                    <li><a class="LISTA" href="C++.html">C++</a></li>
+                    <li><a class="LISTA" href="PYTHON.html">PYTHON</a></li>
+                    <li><a class="LISTA" href="JAVA.html">JAVA</a></li>
+                    <li><a class="LISTA" href="HTML.html">HTML</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!---ACERCA DE MI Y FOTO PPAL-->
+
+    <div class="SEGUNDO">
+        <div class="SEGUNDO2">
+            <p class="ACERCA">ACERCA DE MI</p>
+            <br />
+            <p class="AD">
+                Mi nombre es Luis Sebastian Gonzalez Rodriguez, vivo en Bogota - Colombia, Trabajo
+                en el ambito de la electronica con microcontroladores. Quiero aprender y profundizar en la porgramacion
+                web para conseguir oportunidades de trabajo freelance.
+            </p>
+        </div>
+
+
+        <div>
+            <img class="brazo" src="brazo.jpg" />
+        </div>
+    </div>
+
+    <!--SECCIONES-->
+
+    <div class="SECCION">
+        <div class="SEC1">
+            <div>
+                <img class="IM" src="LIBRO1.jpg" />
+            </div>
+
+            <div class="T1">LIBRERIA DIGITAL</div>
+
+            <div class="T2">Material de descarga en formato PDF para consulta gratis. Libros, Tutoriales, Guias....
+            </div>
+
+            <div class="SB">
+                <a href="LIBROS.html">Saber mas....</a>
+            </div>
+
+        </div>
+
+        <div class="SEC2">
+            <div>
+                <img class="IM" src="proyectos1.jpg" />
+            </div>
+
+            <div class="T1">PROYECTOS</div>
+
+            <div class="T2">Guia de proyectos implementados y diseñados hasta el momento por MEI ingenieria para venta y
+                asesoria
+            </div>
+
+            <div class="SB">
+                <a href="PROYECTOS.html">Saber mas....</a>
+            </div>
+
+        </div>
+
+        <div class="SEC3">
+            <div>
+                <img class="IM" src="links.jpg" />
+            </div>
+
+            <div class="T1">ENLACES DE INTERES</div>
+
+            <div class="T2">Enlaces y sitios de interes realzionados con la electronica y la automatizacion.....</div>
+
+            <div class="SB">
+                <a href="LINKS.html">Saber mas....</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!--FORMULARIO-->
+
+
+    <div class="form-encabezado">
+        <h1>CONTACTO</h1>
+        <p><em>¡Dejanos tus datos y tu consulta!</em></p>
+        <form action="" method="get" class="formulario" id="form">
+
+
+            <!--- INPUT NOMBRE- -->
+
+            <!---Importante: el atributo for de la etiqueta label, debe coincidir con el atributo
+            id del elemento input. Para que estén vinculados.-->
+            <div class="form-eje">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" name="nombre" type="text" required/>
+            </div>
+
+            <!--- INPUT EMAIL- -->
+
+            <!---Aquí vemos un nuevo atributo: placeholder="pepe@gmail.com", 
+                 lo que hará es mostrar un texto predeterminado en el campo de email.-->
+
+            <div class="form-eje">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="lulu@gmail.com" required />
+            </div>
+
+
+            <!--- INPUT MENSAJE- -->
+
+            <!--<textarea> y <label> (para ingresar textos más largos) - Para los campos 
+                de texto largo utilizaremos la etiqueta <textarea>. --->
+
+            <div class="form-eje">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje"></textarea>
+            </div>
+
+
+            <div class="form-eje">
+                <button type="submit" id="submit">Enviar</button>
+            </div>
+
+            <p class="alertas" id="alertas"></p>
+
+        </form>
+
+    </div>
+
+
+    <!--FOOTER - PIE DE PAGINA-->
+
+    <div class="FOOT">
+        <div class="CONTACTO">REDES SOCIALES</div>
+
+        <div class="REDES">
+            <a href="https://www.youtube.com/channel/UC38aALzsL6QMm2XWACIKH7w">
+                <img class="yt" src="imagenes/youtube.png" /></a>
+
+            <a href="https://mail.google.com/mail/u/0/?hl=es#inbox">
+                <img class="yt" src="imagenes/gmail.png" /></a>
+
+            <a href="https://www.linkedin.com/login/es">
+                <img class="yt" src="imagenes/link.png" /></a>
+
+            <a href="https://www.skype.com/es/get-skype/">
+                <img class="yt" src="imagenes/skype.png" /></a>
+
+            <a href="https://www.facebook.com/">
+                <img class="yt" src="imagenes/face.png" /></a>
+
+        </div>
+
+        <div class="CONTACTO">CREADO POR LUIS GONZALEZ - 2023.</div>
+    </div>
+
+    <script src="script.js"></script> <!-- linkea el archivo script.js al HTML-->
+</body>
+
+</html>

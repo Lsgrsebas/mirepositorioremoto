@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML SEMANTICO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="fuente-acento">PAGINA DE PRUEBA LUIS GONZALEZ</h1>
+        <nav>
+            <ul>
+                <li><a href="C++.html">C++</a></li>
+                <li><a href="PYTHON.html">PYTHON</a></li>
+                <li><a href="JAVA.html">JAVA</a></li>
+                <li><a href="HTML.html">HTML</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <br>
+    <div class="about"> <!-- coloque clase al main (acerca de mi y foto) para poder dejarlo uno al lado del otro con display flex-->
+        <div class="acerca">Acerca de mi
+            <div class="fuente-oscura">Mi nombre es Luis Sebastian Gonzalez Rodriguez, vivo en Bogota- Colombia, Trabajo
+            en el ambito de la electronica con microcontroladores. Quiero aprender y profundizar en la porgramacion web para conseguir oportunidades de trabajo freelance.
+            </div>
+        </div>
+        <img class="brazo" src="brazo.jpg" /> <!-- la imagen se deja al mismo nivel jerarquico de el hijo 1(acerca de mi)
+                                               ya que para que se distribuya horizontalmente debe ser hijo 1 -->
+    </div>
+
+                <!---        Cuadros tematicos uno al lado del otro       -->
+
+    <div class="int">
+        <br>
+        <br>
+        <div class="pr">Libreria Digital
+            <br>
+            <br>
+            <img src="LIBRO1.jpg" />
+            <div class="parrafo">Material de descarga en formato PDF para consulta gratis. Libros, Tutoriales, Guias....
+            </div>
+            <a href="LIBROS.html">Saber mas....</a>
+        </div>
+        <div class="pr">Proyectos
+            <br>
+            <br>
+            <img class="p1" src="proyectos1.jpg" />
+            <br>
+            <div class="parrafo">Guia de proyectos implementados y diseñados hasta el momento por MEI ingenieria para
+                venta y asesoria</div>
+            <a href="LIBROS.html">Saber mas....</a>
+        </div>
+    </div>
+    <br>
+    <br>
+    <footer>
+        <p class="fuente-clara"> CONTACTO </p>
+        <ul>
+            <li><a href="https://www.youtube.com/@lsgr22/featured"> YOUTUBE </a></li>
+            <li><a href="https://www.facebook.com/luissebastian.gonzalez.7355/"> FACEBOOK </a></li>
+            <li><a href="https://wa.co/3103360455"> WHATSAPP </a></li>
+        </ul>
+
+
+        <p class="fuente-clara"> "Creado por Luis Gonzalez" </p>
+    </footer>
+
+</body>
+
+</html>
